@@ -1,5 +1,16 @@
-#include <main.h>
-printf _putchar(char c)
+#include "libioP.h"
+#include "stdio.h"
+#undef putchar
+int
+putchar (int c)
 {
-	return (write(1, &c, 1));
+  int result;
+  _IO_acquire_lock (stdout);
+  result = _IO_putc_unlocked (c, stdout);
+  _IO_release_lock (stdout);
+  return result;
 }
+#if defined weak_alias && !defined _IO_MTSAFE_IO
+#undef putchar_unlocked
+weak_alias (putchar, putchar_unlocked)
+#endif
