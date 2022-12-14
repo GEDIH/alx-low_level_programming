@@ -1,4 +1,4 @@
-$ amonkeyprogrammer@ubuntu:/debugging$ cat 2-main.c
+carrie@ubuntu:/debugging$ cat 2-main.c
 #include <stdio.h>
 #include "main.h"
 
@@ -22,9 +22,9 @@ int main(void)
 
         return (0);
 }
-
-$ amonkeyprogrammer@ubuntu:/debugging$ cat 2-largest_number.c
-#include "holberton.h"
+carrie@ubuntu:/debugging$
+carrie@ubuntu:/debugging$ cat 2-largest_number.c
+#include "main.h"
 
 /**
  * largest_number - returns the largest of 3 numbers
@@ -54,6 +54,8 @@ int largest_number(int a, int b, int c)
     return (largest);
 }
 
-$ amonkeyprogrammer@ubuntu:/debugging$
-
-
+carrie@ubuntu:/debugging$
+carrie@ubuntu:/debugging$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 2-largest_number.c 2-main.c -o 2-main
+carrie@ubuntu:/debugging$ ./2-main
+0 is the largest number
+carrie@ubuntu:/debugging$
