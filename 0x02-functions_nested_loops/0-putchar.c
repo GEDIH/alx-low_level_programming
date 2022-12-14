@@ -1,21 +1,13 @@
-#include < stdio.h>
+#include <unistd.h>
 
 /**
-*
-
-int main(void)
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
 {
-
-int i, j;
-for(i=o; i<=4; i++)
-{
-
-printf("This is the STARTING of Outer Loop %d\n", i)
-    for(j=o; j<=4; j++)
-	{
-	printf("    Inner Loop with number %d\n", j);
-	}
-	
-printf("This is the ENDING of Outer Loop %d\n", i)
+	return (write(1, &c, 1));
 }
-return 0;
