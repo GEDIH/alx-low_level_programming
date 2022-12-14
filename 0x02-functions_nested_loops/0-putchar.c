@@ -1,20 +1,21 @@
-#include "main.h"
+#include < stdio.h>
 
 /**
-  * main - Entry point
-  *
-  * Return: Always 0
-  */
+*
+
 int main(void)
 {
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
 
-	return (0);
+int i, j;
+for(i=o; i<=4; i++)
+{
+
+printf("This is the STARTING of Outer Loop %d\n", i)
+    for(j=o; j<=4; j++)
+	{
+	printf("    Inner Loop with number %d\n", j);
+	}
+	
+printf("This is the ENDING of Outer Loop %d\n", i)
 }
+return 0;
