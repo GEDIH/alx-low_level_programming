@@ -1,5 +1,5 @@
 #include <main.h>
-int _putchar(char c)
+printf _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
