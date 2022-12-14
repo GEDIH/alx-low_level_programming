@@ -1,24 +1,13 @@
-#undef putchar
+#include <unistd.h>
 
-int
-_DEFUN(_putchar_r, (ptr, c),
-       struct _reent *ptr _AND
-       int c)
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
 {
-  _REENT_SMALL_CHECK_INIT (ptr);
-  return _putc_r (ptr, c, _stdout_r (ptr));
+	return (write(1, &c, 1));
 }
-
-#ifndef _REENT_ONLY
-
-int
-_DEFUN(putchar, (c),
-       int c)
-{
-  struct _reent *reent = _REENT;
-
-  _REENT_SMALL_CHECK_INIT (reent);
-  return _putc_r (reent, c, _stdout_r (reent));
-}
-
-#endif
