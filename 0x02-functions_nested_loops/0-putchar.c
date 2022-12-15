@@ -1,11 +1,9 @@
-#include "main.h"
-
+#include "putchar.h"
 /**
  * main - prints "main"
  *
  * Return: always 0 (Success)
  */
-
 int	main(void)
 {
 	int		i = 0;
