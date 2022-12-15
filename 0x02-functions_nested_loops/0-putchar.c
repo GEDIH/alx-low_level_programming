@@ -9,7 +9,7 @@
 int	main(void)
 {
 	int		i = 0;
-	char	*str = "main\n";
+	char	*str = "putchar\n";
 
 	while (str[i])
 		_putchar(str[i++]);
