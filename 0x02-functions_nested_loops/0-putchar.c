@@ -1,15 +1,21 @@
 #include "main.h"
 /**
- * main - prints "main"
+ * main - Entry point
  *
- * Return: always 0 (Success)
+ * Return: Always 0 (Success)
  */
-int	main(void)
+int main(void)
 {
-	int		i = 0;
-	char	*str = "\n";
+	char h[] = "putchar";
+	int m;
 
-	while (str[i])
-		_putchar(str[i++]);
+	m = 0;
+
+	while (m <= 8)
+	{
+		_putchar(h[m]);
+		m++;
+	}
+	_putchar('\n');
 	return (0);
 }
