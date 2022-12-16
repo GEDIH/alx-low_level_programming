@@ -1,17 +1,17 @@
 #include "main.h"
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - prints _putchar, fllowd by a new linees
+ * Return: Alwys 0 (Success)
  */
 int main(void)
 {
-	int m;
-	m = 0;
-	while (m <= 8)
+	char GEDIH[] = "_putchar";
+
+	int c;
+
+	for (c = 0; c < 8; c++)
 	{
-		_putchar(h[m]);
-		m++;
+		_putchar(abe[c]);
 	}
 	_putchar('\n');
 	return (0);
