@@ -5,13 +5,13 @@
  */
 int main(void)
 {
-	char gedih[] = "_putchar";
+	char [] = "_putchar";
 
 	int c;
 
 	for (c = 0; c < 8; c++)
 	{
-		_putchar(gedih[c]);
+		_putchar [c];
 	}
 	_putchar('\n');
 	return (0);
