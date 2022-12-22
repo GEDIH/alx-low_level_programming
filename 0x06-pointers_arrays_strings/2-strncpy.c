@@ -1,13 +1,4 @@
-#include "holberton.h"
-
-/**
-  * _strncpy - Copy a string
-  * @dest: The destination value
-  * @src: The source value
-  * @n: The copy limit
-  *
-  * Return: char value
-  */
+#include "main.h"
 char *_strncpy(char *dest, char *src, int n)
 {
 	int a = 0, b = 0;
@@ -31,4 +22,3 @@ char *_strncpy(char *dest, char *src, int n)
 
 	return (dest);
 }
-
